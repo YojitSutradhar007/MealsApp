@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:meals_app/model/model.dart';
 
 final List<Category> itemList = [
-  Category(id: "C1", item: "Italian",color: Colors.indigo),
-  Category(id: "C2", item: "Quick and easy",color: Colors.greenAccent),
-  Category(id: "C3", item: "Exotic",color: Colors.teal),
-  Category(id: "C4", item: "Indian",color: Colors.pink),
-  Category(id: "C5", item: "Breakfast",color: Colors.cyan),
-  Category(id: "C6", item: "French",color: Colors.deepPurpleAccent),
-  Category(id: "C7", item: "Burger",color: Colors.lime),
-  Category(id: "C/", item: "Vadapav",color: Colors.blueGrey),
+  Category(id: "c1", item: "Italian",color: Colors.indigo),
+  Category(id: "c2", item: "Quick and easy",color: Colors.greenAccent),
+  Category(id: "c3", item: "Exotic",color: Colors.teal),
+  Category(id: "c4", item: "Indian",color: Colors.pink),
+  Category(id: "c5", item: "Breakfast",color: Colors.cyan),
+  Category(id: "c6", item: "French",color: Colors.deepPurpleAccent),
+  Category(id: "c7", item: "Burger",color: Colors.lime),
+  Category(id: "c8", item: "Vadapav",color: Colors.blueGrey),
 ];
 
 
