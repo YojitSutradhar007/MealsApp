@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:meals_app/data/categories_list.dart';
 import 'package:meals_app/widgets/widgets.dart';
+import '../../resources/resources.dart';
 
-class CategoriesScreen extends StatelessWidget {
-  const CategoriesScreen({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class CategoriesScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           "Categories",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: ColorManager.colorWhite),
         ),
       ),
       body: Column(

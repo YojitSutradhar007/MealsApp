@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:meals_app/data/categories_list.dart';
 import 'package:meals_app/model/category.dart';
+import '../screens/screens.dart';
 
 class CategoryViewItem extends StatelessWidget {
-  const CategoryViewItem({super.key, required this.category});
+  const CategoryViewItem({
+    super.key,
+    required this.category,
+  });
 
   final Category category;
 
@@ -10,7 +15,15 @@ class CategoryViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        debugPrint("category view item");
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => MealsScreen(
+              mealList: mealData.where((element) => element.categories.contains(category.id)).toList(),
+              title: category.item,
+            ),
+          ),
+        );
       },
       splashColor: Colors.white.withGreen(155).withOpacity(0.8),
       borderRadius: BorderRadius.circular(15),
@@ -36,6 +49,8 @@ class CategoryViewItem extends StatelessWidget {
                   fontSize: 20,
                   fontWeight: FontWeight.w200,
                 ),
+            maxLines: 2,
+            softWrap: true,
             textAlign: TextAlign.end,
           ),
         ),

@@ -12,6 +12,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^5.1.0
   flutter_riverpod: ^2.3.6
+  transparent_image: ^2.0.1
+  cached_network_image: ^3.2.3
 
 dev_dependencies:
   flutter_test:
