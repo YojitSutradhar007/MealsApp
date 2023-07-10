@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: GoogleFonts.sansita().fontFamily,
       ),
-      home: const HomeScreen(),
+      home:   DashBoard(),
     );
   }
 }
