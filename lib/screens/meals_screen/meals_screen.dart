@@ -28,8 +28,13 @@ class MealsScreen extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         child: mealList.isEmpty
             ? const Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Oops! No data Found"),
+                  Center(
+                      child: Text(
+                    "Oops! No data Found",
+                    style: TextStyle(fontSize: 20),
+                  )),
                 ],
               )
             : ListView.builder(
