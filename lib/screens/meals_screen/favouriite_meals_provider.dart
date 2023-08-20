@@ -2,7 +2,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../model/model.dart';
 
 final favouriteMeal = StateNotifierProvider<FavouritesMealsList, List<Meals>>((ref) => FavouritesMealsList());
-
 class FavouritesMealsList extends StateNotifier<List<Meals>> {
   FavouritesMealsList() : super([]);
 
@@ -15,5 +14,4 @@ class FavouritesMealsList extends StateNotifier<List<Meals>> {
     state.remove(meals);
     state = [...state];
   }
-
 }

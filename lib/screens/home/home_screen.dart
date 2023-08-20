@@ -4,7 +4,8 @@ import 'package:meals_app/widgets/widgets.dart';
 import '../../resources/resources.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+    HomeScreen({super.key,required this.scaffoldKey});
+  final GlobalKey<ScaffoldState> scaffoldKey;
 
 
 
@@ -12,6 +13,13 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            scaffoldKey.currentState?.openDrawer();
+          },
+          icon: const Icon(Icons.menu,color: ColorManager.colorWhite,),
+        ),
+
         title: const Text(
           "Categories",
           style: TextStyle(color: ColorManager.colorWhite),
